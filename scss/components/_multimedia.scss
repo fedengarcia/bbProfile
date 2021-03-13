@@ -1,0 +1,21 @@
+.multimedia-container{
+    min-height: auto;
+    overflow: hidden;
+    background: linear-gradient(to bottom, #212529, #535b63);
+
+    .multimedia-videos{
+        @extend %flex-center;
+        border-radius: 25px;
+        overflow: hidden;
+        width: 100%;
+        height: 600px;
+
+
+        iframe{
+            height: 80%;
+            width: 80%;
+            border-radius: 10px;
+        }
+        
+    }
+}

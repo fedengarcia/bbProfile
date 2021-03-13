@@ -1,0 +1,94 @@
+@media only screen and (max-width:451px){
+    .statistics-container, #Snav, .carouselItem3{
+        display:none;
+    }
+
+
+    // ACCORDION
+    .accordion{
+        .accordion-item{
+            .accordion-header{
+                height: 400px;
+                .accordion-button{
+                    width: 38%;
+                    font-size: 1.5em;
+                    padding:1em;
+                }
+            }
+        }
+        
+    }
+
+    .accordion-body {
+        .imgFicha-container img{
+            width: 150px;
+        }
+        .ficha-tecnica-items{
+            li{
+                font-size: 1.5em;    
+            }
+        }
+    }
+
+    // NOTICIAS
+    .noticias-container{
+        .slideIn__animation{
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+    }
+    
+
+    // CARACTERISTICAS
+    
+    .features-container{
+        margin-bottom: 0px;
+    }
+
+    .personal-features-items{
+        margin-left:20px;
+        ul{
+            li{
+                font-size: 20px;
+            }
+        }
+    }
+
+
+    // MULTIMEDIA
+
+
+    .multimedia-container{
+        background: linear-gradient(to bottom, #535b63, #212529);
+
+        .multimedia-videos{
+            
+            iframe{
+                width: 80%;
+                height: 80%;
+            }
+        }
+
+    }
+    
+
+    // CONTACTO
+
+    .contact-container{
+        background: linear-gradient(to bottom, #212529, #535b63);
+        flex-direction: column;
+    }
+
+    .contact-description{
+        text-align: center;
+    }
+
+    .footer-container{
+        background: linear-gradient(to bottom, #535b63,#212529);
+    }
+
+    .form-group{
+        width: 100%;
+    }
+}

@@ -1,0 +1,55 @@
+.accordion{
+
+    margin: 15px 5px;
+    justify-content: center;
+    align-items: center;
+
+    .accordion-header{
+        // border: 1px solid black;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+        &:hover{
+            box-shadow: 10px 10px 10px 10px #a1a5a9;
+        }
+
+        .accordion-button{
+            width: 15%;
+            font-size: 3em;
+            border: none;
+
+        }
+
+
+    }
+}
+
+
+.accordion-button:not(.collapsed) {
+    color: black;
+    background-color: white;
+}
+
+.accordion-body{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 10px 10px 10px #a1a5a9;
+
+    .imgFicha-container img{
+        width: 200px;
+    }
+
+    .ficha-tecnica-items{
+        li{
+            font-size: 2em;    
+        }
+    }
+    
+
+}
+
+
+
+

@@ -1,0 +1,17 @@
+@media only screen and (min-width:961px){
+
+    // NOTICIAS
+    .noticias-container{
+        .slideIn__animation{
+            animation-name: slidein-left;
+            animation-duration: 8s;
+            animation-iteration-count: initial;
+            background-color: #212529;
+    
+            a{
+                text-decoration: none;   
+            }
+        }
+    }
+
+}

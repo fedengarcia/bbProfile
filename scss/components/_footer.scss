@@ -1,0 +1,17 @@
+.footer-container{
+    height: 100px;
+    background-color: #212529;
+    @extend %flex-center;
+    .nav-footer{
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        
+        .footer-item{
+            width: 50px;
+        }
+    }
+}
+
+
+

@@ -1,0 +1,76 @@
+.contact-container{
+    display:flex;
+    justify-content: space-around;
+    width: 100%;
+    background: linear-gradient(to bottom, #535b63, #212529);
+    padding: 5em 4em;
+
+    .contact-description-container{
+        width: 100%;
+        @extend %flex-center;
+        flex-direction: column;
+        .contact-title, .contact-description{
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+        
+            h2{
+                font-size: 35px;
+                color: white;
+            }
+        
+            p{
+                font-size: 25px;
+                color: white;
+            }
+        }
+
+    }
+
+    .contact-form-container{
+        width: 100%;
+
+        form{
+            @extend %flex-center;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .form-group{
+            width: 70%;
+            height: 30px;
+            margin: 1.5em 1.5em;
+            outline: none;
+            font-size: 2em;
+        
+            textarea{
+                resize:none;
+            }
+        
+            button{
+                border: 1px solid white;
+                border-radius: 30px;
+                width: 100px;
+                margin-top: 40px;
+                font-size: 15px;
+                cursor: pointer;
+                height: 40px;
+            } 
+
+            label{
+                color: white;
+            }
+        
+        }
+
+    }
+
+}
+
+
+
+
+
+
+
+

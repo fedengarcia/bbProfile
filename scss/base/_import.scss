@@ -1,0 +1,24 @@
+// FONTS
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+
+//BASE
+@import 'variables';
+@import 'extend';
+
+// COMPONENTS
+@import '../components/header';
+@import '../components/news';
+@import '../components/footer';
+@import '../components/contact';
+@import '../components/accordion';
+@import '../components/body';
+@import '../components/features';
+@import '../components/animations';
+@import '../components/statistics';
+@import '../components/multimedia';
+
+
+// MEDIA QUERYS
+@import '../mediaQuerys/mobile';
+@import '../mediaQuerys/tablet';
+@import '../mediaQuerys/desktop'

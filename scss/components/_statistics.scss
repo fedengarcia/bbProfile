@@ -1,0 +1,144 @@
+.statistics-container{
+    @extend %flex-center;
+    flex-direction: column;
+    min-height: auto;
+    overflow: hidden;
+    background: linear-gradient(to bottom, #535b63, #212529);
+
+    .statistics-title{
+        @extend %flex-center;
+        flex-direction: row;
+        width: 100%;
+        height: 40px;
+        text-align: center;
+        margin-bottom: 60px;
+        margin-top: 50px;
+        
+
+        h2{
+            padding: 10px;
+            width: 100%;
+            color: white;
+            font-size: 80px; 
+            font-weight: 900;
+            text-shadow: 
+            -0.0075em 0.0075em 0 mix(#5a5c5e, #f0eced, 94%),
+            0.005em 0.005em 0 mix(#5a5c5e, #f0eced, 60%),
+            0.01em 0.01em 0 mix(#5a5c5e, #f0eced, 62%), 
+            0.015em 0.015em mix(#5a5c5e, #f0eced, 64%), 
+            0.02em 0.02em 0 mix(#5a5c5e, #f0eced, 66%), 
+            0.025em 0.025em 0 mix(#5a5c5e, #f0eced, 68%),
+            0.03em 0.03em 0 mix(#5a5c5e, #f0eced, 70%),
+            0.035em 0.035em 0 mix(#5a5c5e, #f0eced, 72%);
+        }
+
+
+    }
+
+    .statistics-grid-details{
+        display: grid;
+        grid-template-columns: 15% 85%;
+        grid-template-rows:  1/15;
+        width: 90%;
+        height: 100%;
+        border-radius: 30px;
+        margin-bottom: 20px;
+
+        &:hover .barra-partidos{
+            width: 18%
+        }
+
+        &:hover .barra-tc{
+            width: 52%
+        }
+
+        &:hover .barra-3p{
+            width: 20.7%
+        }
+
+        &:hover .barra-tl{
+            width: 42.5%
+        }
+
+        &:hover .barra-3pi{
+            width: 29%
+        }
+
+        &:hover .barra-3pc{
+            width: 6%
+        }
+        &:hover .barra-ropr{
+            width: 1.3%
+        }
+
+        &:hover .barra-rdpr{
+            width: 5.0%
+        }
+
+        &:hover .barra-rtpr{
+            width: 6.3%
+        }
+
+        &:hover .barra-aspr{
+            width: 1.7%
+        }
+
+        &:hover .barra-repr{
+            width: 7%
+        }
+
+        &:hover .barra-tappr{
+            width: 1.6%
+        }
+
+        &:hover .barra-pepr{
+            width: 2.7%
+        }
+
+        &:hover .barra-fopr{
+            width: 3.6%
+        }
+
+        &:hover .barra-ptspr{
+            width: 10.4%
+        }
+    }
+
+  
+
+    .stats-item{
+        justify-self: flex-start;
+        align-self: center;
+
+        h2{
+            margin-left: 15px;
+            color: white;
+        }
+    }
+    
+    .stats-counter{
+        width: 100%;
+        height: 20px;
+        align-self: center;
+        
+    
+    }
+    
+    .bar{
+        transition: all;
+        transition-duration: 1s;
+        transition-timing-function: ease-in-out; 
+        background-color: #989ea3;
+        width: 5px;
+        height: 20px;
+    }
+
+}
+
+
+
+
+
+
+
+

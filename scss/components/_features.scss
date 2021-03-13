@@ -1,0 +1,23 @@
+.features-container{
+    @extend %flex-center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background: linear-gradient(to bottom, #212529, #535b63);
+
+    .personal-features{
+        padding: 12em 6em;
+        @extend %flex-center;
+        /* width: 100%; */
+        .personal-features-items{
+            font-size: 38px;
+            color: whitesmoke;
+            ul{
+                text-align: center;
+                list-style:none;
+            }
+        }
+    }
+
+}
+
+

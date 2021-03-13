@@ -1,0 +1,762 @@
+/*
+0- SETEO GENERALES
+1- HEADER - BANNER
+2- HEADER - NAV
+3- NOTICIAS
+4- FICHA TECNICA
+5- CARACTERISTICAS
+6- ESTADISTICAS
+7- MULTIMEDIA
+8- CONTACT
+9- FOOTER
+*/
+
+*{
+    padding: 0;
+    margin: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+/* SETEO GENERALES */
+
+body{
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: white;
+    background-color: black;
+    box-sizing: content-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+/*******************************************
+*********** 1 -  HEADER - BANNER  **********
+********************************************/
+
+
+.header-container {
+    background-color: black;
+    text-align: center;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-bottom: 20px;
+    max-height: 550px;
+}
+
+.banner{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    height: 400px;
+    z-index: 0;
+}
+
+.banner-img{
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+
+.banImg1{
+    z-index: 2;
+}
+
+.banImg1 img{
+    height: 530px;
+    margin: -0px -0px 0px -50px;
+}
+
+.banImg2 img{
+    margin: 0px -40px 0px -250px;
+}
+
+
+.banImg3 img{
+    height: 500px;
+    margin: 0px -0px 100px -122px;
+}
+
+.banImg4 img{
+    height: 500px;
+    margin: 0px 0px 0px -55px;
+}
+
+
+
+/*******************************************
+*********** 2 -  HEADER - NAV  **************
+********************************************/
+.navbar-light .navbar-nav .nav-link {
+    color: black;
+}
+
+.nav-link{
+    padding: .6rem 1rem;
+}
+
+
+/* *************************************
+*********** 3 - NOTICIAS ***********
+****************************************/
+
+.noticias-fichaTecnica-container{
+    width: 100%;
+    min-height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    margin-top: 90px;
+}
+
+.noticias-container{
+    height: 800px;
+    min-width: auto;
+    overflow: scroll;
+    border: 2px solid  #eee;
+    border-radius: 10px;
+    /* margin-left: 30px; */
+}
+
+.noticias-grid-container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 440px;
+    overflow: scroll;
+    min-height: 800px;
+}
+
+
+
+.noticias{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 400px;
+    width: 300px;
+    margin: 15px;
+    padding: .5rem;
+    border-radius: 8px;
+    background: #eee;
+    margin-left: 20px;
+    box-sizing: content-box;
+}
+
+.noticias:hover{
+    box-shadow: 5px 5px 5px #999;
+}
+
+.noticiasBox{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+    width: 100%
+}
+
+.noticia-detail{
+    flex-direction: column;
+}
+
+.noticia-detail h2{
+    font-size: 25px;
+}
+
+.noticia-detail a{
+    text-decoration: none;
+    color: black;
+}
+
+.noticia-detail p{
+    color: black;
+    font-style: italic;
+}
+
+.noticia-img{
+    border-radius: 30px;
+    height: 200px;
+    width: 100%;
+    overflow: hidden;
+    margin: 5px 0px;
+}
+
+.noticia-img img{
+    height: 200px;
+    width: 100%;
+}
+
+
+.share-buttons{
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.media-logo-box{
+    width: 50px;
+}
+
+
+/***************************************
+********* 4-  FICHA TECNICA *************
+****************************************/
+
+.ficha-tecnica-container{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    flex-wrap: wrap;
+}
+
+.ficha-tecnica{
+    margin-bottom: 40px;
+}
+
+.ficha-tecnica-title{
+    font-size: 40px;
+    margin-top: -20px;
+    margin-left: 40px; 
+}
+
+.ficha-tecnica-items{
+    margin-top: 5px;
+    font-size: 30px;
+}
+
+.ficha-tecnica-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.fcimg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.fcimg  img{
+    width: 150px;   
+}
+
+.fcimg1{
+    position: relative;
+    margin: 10px;
+    bottom: 20px;
+}
+
+.fcimg2{
+    position: relative;
+    margin: 10px 10px 10px 0px;
+    top: 30px;
+    height: 400px;
+}
+
+.fcimg3{
+    position: relative;
+    top: 75px;
+}
+
+
+/***************************************
+********* 5-  CARACTERISTICAS  **********
+****************************************/
+.features-container{
+    height: 400px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.personal-features{
+    height: 350px;
+    margin-top: -10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 100%; */
+}
+
+.personal-features-items{
+    font-size: 38px;
+}
+
+.personal-button-highlights-container{
+    /* width: 100%; */
+    align-content: center;
+    text-align: center;
+    margin: 35px;
+}
+
+.button-highlights{
+    width: 300px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 20px;
+    background-color: rgb(231, 194, 119);
+    border: 1px solid rgb(231, 194, 119);
+    border-radius: 15px;
+}
+
+.button-highlights:hover{
+    box-shadow: 3px 3px 3px #999;
+}
+
+.button-highlights a{
+    width: 200px;
+}
+
+
+
+
+
+
+/*****************************************
+*********** 6 -  ESTADISTICAS ************
+****************************************/
+
+.statistics-container{
+    min-height: auto;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 40px;
+    overflow: hidden;
+}
+
+.statistics-title{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+    height: 40px;
+    margin-bottom: 30px;
+}
+
+.statistics-title h2{
+    font-size: 40px;
+}
+
+/* .team-selector{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    font-size: 16px;
+    color: black;
+    width: 400px;
+    height: 50px;
+    background-color: #D6D9DC;
+    padding: 8px 15px;
+    margin-bottom: 20px;
+} */
+
+
+.statistics-grid-details{
+    display: grid;
+    grid-template-columns: 10% 90%;
+    grid-template-rows:  1/15;
+    width: 90%;
+    height: 100%;
+    border: 2px solid white;
+}
+
+.stats-item{
+    justify-self: center;
+    align-self: center;
+}
+
+.stats-counter{
+    width: 100%;
+    height: 20px;
+    align-self: center;
+
+}
+
+
+.bar{
+    transition: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out; 
+    background-color: white;
+    width: 5px;
+    height: 20px;
+}
+
+.statistics-grid-details:hover .bar{
+    width: 300px
+}
+
+  
+
+
+
+
+/*****************************************
+*********** 7 -  MULTIMEDIA **************
+****************************************/
+.multimedia-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    min-height: auto;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.multimedia-videos{
+    border: 1px solid #D9D9D9;
+    border-radius: 25px;
+    margin: 20px;
+    overflow: hidden;
+}
+
+.multimedia-videos{
+    width: 50%;
+    height: 400px;
+    margin-bottom: 50px;
+}
+
+
+#section1{
+    animation-duration: 15s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+}
+
+.multimedia-img{
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    border-radius: 30px;
+    border: 1px solid white;
+}
+
+.multimedia-img img{
+    width: 400px;
+}
+
+
+
+/* .multimedia-img:hover{
+    margin: 0 40px;
+    transform: scale(1.2);
+} */
+
+/* 
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%
+    }
+  
+    to {
+      margin-left: -50%;
+      width: 100%;
+    }
+    
+} */
+
+
+
+/* .multimedia-img img{
+    transition: all 1s;
+    float: left;
+    width:  400px;
+    height: 400px;
+    object-fit: cover;
+    cursor: pointer;
+}  */
+
+
+.multimedia-youtube{
+    height: 100%;
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+
+
+
+/**************************************
+*********** 8 -  CONTACT **************
+***************************************/
+.contact-container{
+    display:flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+
+.contact-description-container, .contact-form-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.contact-title, .contact-description{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.contact-title{
+    font-size: 35px;
+}
+
+.contact-description{
+    font-size: 25px;
+}
+
+
+.form-group{
+    width: 500px;
+    height: 30px;
+    margin: 50px;
+    outline: none;
+}
+
+
+.form-group textarea{
+    resize: none;
+}
+
+
+.form-group button{
+    border: 1px solid white;
+    border-radius: 30px;
+    width: 100px;
+    margin-top: 40px;
+    font-size: 15px;
+    cursor: pointer;
+    height: 40px;
+} 
+
+
+/***************************************
+*********** 9 -  FOOTER ****************
+****************************************/
+
+.footer-container{
+    height: 100px;
+    background-color: black;
+}
+
+.nav-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.footer-item{
+    width: 50px;
+}
+
+
+
+
+/* Mobile */
+@media only screen and (max-width:450px){
+    .banImg1, .banImg4, .banImg3, .ficha-tecnica-img,
+    .statistics-container, #Snav, .wrapper{
+        display:none;
+    }
+
+    /******************************************
+    ******* 3 y 4 - NOTICIAS Y FICHA TECNICA **
+    *******************************************/
+
+    .noticias-fichaTecnica-container{
+        flex-direction: column;
+        min-height: auto;
+        overflow: hidden;
+    }
+
+    .noticias-container{
+        width: 100%;
+        height: 500px;
+        overflow: scroll;
+        margin-bottom: 30px;
+    }
+
+    .noticias-grid-container{
+        grid-template-columns: 100%; 
+        grid-template-rows: 300px;
+    }
+    
+    .noticias{
+        width: 350px;
+        height:250px;
+        flex-direction: column;
+    }
+
+    .share-buttons{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .noticia-img{
+        margin: 0px 20px;
+    }
+
+
+    .ficha-tecnica{
+        width: 600px;
+    }
+
+    /******************************************
+    ******* 5 - CARACTERISTICAS ***************
+    *******************************************/
+
+    .personal-features-items{
+        font-size: 30px;
+        margin-left: 50px;
+    }
+
+    /******************************************
+    ********** 7 - MULTIMEDIA *****************
+    *******************************************/
+
+    .multimedia-container{
+        flex-direction: column;
+    }
+
+    .multimedia-grid-images{
+        width: 75%;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto;
+    }
+
+    .multimedia-videos{
+        width: 75%;
+    }
+
+    /******************************************
+    ********** 8 - CONTACTO *****************
+    *******************************************/
+
+    .contact-container{
+        flex-direction: column;
+        margin: 0px 10px;
+    }
+
+
+
+
+}
+
+/* Tablet */
+@media only screen and (min-width:450px) and (max-width:960px){
+    .banImg1, .banImg4, .ficha-tecnica-img,.wrapper{
+        display:none;
+    }
+
+    .banImg3 img{
+        height: 500px;
+        margin: 0px -0px 100px -25px;
+    }
+
+    /******************************************
+    ******* 3 y 4 - NOTICIAS Y FICHA TECNICA ****
+    *******************************************/
+
+    .noticias-fichaTecnica-container{
+        flex-direction: column;
+        min-height: auto;
+        overflow: hidden;
+        margin-top: 130px;
+
+    }
+
+    .noticias-container{
+        width: 90%;
+        height: 300px;
+        overflow: scroll;
+        margin-bottom: 30px;
+    }
+
+    .noticias-grid-container{
+        grid-template-columns: 100%; 
+        grid-template-rows: 300px;
+    }
+
+    .noticias{
+        width: 800px;
+        height:250px;
+        flex-direction: row;
+    }
+
+    .share-buttons{
+        flex-direction: column;
+        width: 70px;
+        justify-content: space-between;
+    }
+
+    .noticia-img{
+        margin: 0px 20px;
+    }
+
+    /******************************************
+    ******* 5 - CARACTERISTICAS ***************
+    *******************************************/
+
+    .features-container{
+        margin-left: 100px;
+    }
+
+
+    /******************************************
+    ******* 6 - STATISTICS ********************
+    *******************************************/
+
+
+    /******************************************
+    ********** 7 - MULTIMEDIA *****************
+    *******************************************/
+
+    .multimedia-container{
+        flex-direction: column;
+    }
+
+    .multimedia-grid-images{
+        width: 75%;
+    }
+
+    .multimedia-videos{
+        width: 75%;
+    }
+
+    /******************************************
+    ********** 8 - CONTACTO *****************
+    *******************************************/
+
+    .contact-container{
+        flex-direction: column;
+    }
+
+
+    /******************************************
+    ********** 9 - FOOTER *****************
+    *******************************************/
+
+
+}
+
+/* Desktop */
+@media only screen and (min-width:961px){}
