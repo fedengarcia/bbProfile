@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap");
-.multimedia-container .multimedia-videos, .statistics-container .statistics-title, .statistics-container, .features-container .personal-features, .features-container, .contact-container .contact-form-container form, .contact-container .contact-description-container, .footer-container, .noticiasBox, .noticias-container {
+.multimedia-container .multimedia-videos, .statistics-container .statistics-title, .statistics-container, .features-container .personal-features, .features-container, .contact-container .contact-form-container form, .contact-container .contact-description-container, .footer-container, .noticias-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,6 +12,10 @@
 .carousel-inner .item, .carousel-inner img {
   height: 100% !important;
   width: 100% !important;
+}
+
+.navbar {
+  z-index: 2;
 }
 
 .nav-item a {
@@ -209,6 +213,16 @@ body {
   font-family: "Open Sans Condensed", sans-serif;
   box-sizing: content-box;
 }
+body .arrow {
+  position: fixed;
+  bottom: 75px;
+  right: 40px;
+  z-index: 1;
+  cursor: pointer;
+}
+body .arrow img {
+  width: 50px;
+}
 
 html {
   scroll-behavior: smooth;
@@ -225,12 +239,15 @@ html {
   /* width: 100%; */
 }
 .features-container .personal-features .personal-features-items {
-  font-size: 38px;
   color: whitesmoke;
 }
 .features-container .personal-features .personal-features-items ul {
   text-align: center;
   list-style: none;
+}
+.features-container .personal-features .personal-features-items ul li {
+  font-size: 38px;
+  animation: styleli 1s linear infinite;
 }
 
 @keyframes slidein-top {
@@ -249,6 +266,7 @@ html {
     margin-left: 0%;
   }
 }
+@keyframes styleli {}
 .statistics-container {
   flex-direction: column;
   min-height: auto;

@@ -9,11 +9,15 @@
         @extend %flex-center;
         /* width: 100%; */
         .personal-features-items{
-            font-size: 38px;
             color: whitesmoke;
             ul{
                 text-align: center;
                 list-style:none;
+
+                li{
+                    font-size: 38px;
+                    animation: styleli 1s linear infinite;
+                }
             }
         }
     }

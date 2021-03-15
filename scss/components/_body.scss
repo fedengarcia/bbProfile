@@ -6,8 +6,20 @@
 /* SETEO GENERALES */
 
 body{
-    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: $general-font;
     box-sizing: content-box;
+
+
+    .arrow{
+        position: fixed;
+        bottom: 75px;
+        right: 40px;
+        z-index: 1;
+        cursor: pointer;
+        img{
+            width: 50px;
+        }
+    }
 }
 
 html{
