@@ -6,12 +6,8 @@
     // margin-bottom: 30px;
     background-color: #212529;
     // background: linear-gradient(to top, #212529, white);
-    .slideIn__animation{
-        display: flex;
-
-        a{
-            text-decoration: none;   
-        }
+    a{
+        text-decoration: none;   
     }
 }
 
@@ -38,6 +34,9 @@
     }
     &:hover h2{
         color: #a23034;
+    }
+    a{
+        text-decoration: none;   
     }
 }
 
@@ -80,10 +79,13 @@
 
 .share-buttons{
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
+    display: flex;
 
     .media-logo-box{
         width: 50px;
+        margin: 15px;
+
     }
 }
 
