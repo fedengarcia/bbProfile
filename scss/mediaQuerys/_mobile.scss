@@ -1,14 +1,25 @@
-@media only screen and (max-width:451px){
+@media only screen and (max-width:480px){
     .statistics-container, #Snav, .carouselItem3{
         display:none;
     }
 
+    .body {
+        .arrow{
+            right: 10px;
+        }
+    }    
+
+
+    // NAVBAR
+    .navbar-nav{
+        align-items: center;
+    }
 
     // ACCORDION
     .accordion{
         .accordion-item{
             .accordion-header{
-                height: 400px;
+                height: 50px;
                 .accordion-button{
                     width: 38%;
                     font-size: 1.5em;
@@ -32,10 +43,7 @@
 
     // NOTICIAS
     .noticias-container{
-        .slideIn__animation{
-            flex-wrap: wrap;
-            justify-content: center;
-        }
+        flex-wrap: wrap;
         
     }
     
@@ -47,10 +55,10 @@
     }
 
     .personal-features-items{
-        margin-left:20px;
+        // margin-left:20px;
         ul{
             li{
-                font-size: 20px;
+                font-size: 5px;
             }
         }
     }
@@ -86,6 +94,9 @@
 
     .footer-container{
         background: linear-gradient(to bottom, #535b63,#212529);
+        .nav-footer{
+            justify-content: space-between;
+        }
     }
 
     .form-group{

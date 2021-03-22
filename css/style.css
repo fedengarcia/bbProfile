@@ -405,13 +405,21 @@ html {
   border-radius: 10px;
 }
 
-@media only screen and (max-width: 451px) {
+@media only screen and (max-width: 480px) {
   .statistics-container, #Snav, .carouselItem3 {
     display: none;
   }
 
+  .body .arrow {
+    right: 10px;
+  }
+
+  .navbar-nav {
+    align-items: center;
+  }
+
   .accordion .accordion-item .accordion-header {
-    height: 400px;
+    height: 50px;
   }
   .accordion .accordion-item .accordion-header .accordion-button {
     width: 38%;
@@ -426,20 +434,16 @@ html {
     font-size: 1.5em;
   }
 
-  .noticias-container .slideIn__animation {
+  .noticias-container {
     flex-wrap: wrap;
-    justify-content: center;
   }
 
   .features-container {
     margin-bottom: 0px;
   }
 
-  .personal-features-items {
-    margin-left: 20px;
-  }
   .personal-features-items ul li {
-    font-size: 20px;
+    font-size: 5px;
   }
 
   .multimedia-container {
@@ -462,6 +466,9 @@ html {
   .footer-container {
     background: linear-gradient(to bottom, #535b63, #212529);
   }
+  .footer-container .nav-footer {
+    justify-content: space-between;
+  }
 
   .form-group {
     width: 100%;
@@ -473,7 +480,7 @@ html {
     font-size: 2.5em;
   }
 
-  .noticias-container .slideIn__animation {
+  .noticias-container {
     flex-wrap: wrap;
     justify-content: center;
   }
