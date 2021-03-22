@@ -300,25 +300,25 @@
 
 
         <div class="contact-form-container">
-        <form>
+        <form action="enviar.php" method="post">
             <div class="form-group">
               <label for="nombreApellido">Nombre y Apellido</label>
-              <input type="text" class="form-control" id="nombreApellido" placeholder="Nombre y Apellido">
+              <input type="text" class="form-control" id="nombreApellido" placeholder="Nombre y Apellido" name="nombreApellido">
             </div>
             <div class="form-group">
                 <label for="correoElenctronico">Correo Electronico</label>
-                <input type="email" class="form-control" id="correoElectronico" placeholder="Correo Electronico">
+                <input type="email" class="form-control" id="correoElectronico" placeholder="Correo Electronico" name="email">
             </div>
             <div class="form-group">
                 <label for="asunto">Asunto</label>
-                <input type="text" class="form-control" id="asunto" placeholder="Asunto">
+                <input type="text" class="form-control" id="asunto" placeholder="Asunto" name="asunto">
             </div>
             <div class="form-group">
               <label for="consutlaSugerencia">Consulta/Sugerencia</label>
-              <textarea class="form-control" id="consultaSugerencia" rows="3"></textarea>
+              <textarea class="form-control" id="consultaSugerencia" rows="3" name="consulta"></textarea>
             </div>
             <div class="form-group">
-                <button type="submit" name="submit">Enviar</button>
+                <button type="submit" name="submit" value="enviarMensaje" id="btnSend">Enviar</button>
             </div>
           </form>
           
