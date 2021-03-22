@@ -2,6 +2,7 @@
     height: 100px;
     background-color: #212529;
     @extend %flex-center;
+    padding: 100px;
     .nav-footer{
         display: flex;
         width: 100%;

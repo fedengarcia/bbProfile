@@ -1,13 +1,18 @@
+.carousel{
+    z-index: 2;
+}
+
 .carousel-inner{
     max-height: 650px;
     overflow: hidden;
-    
 
     .item, img{
         height: 100% !important;
         width:  100% !important;
     }
 }
+
+
 
 .navbar{
     z-index: 2;

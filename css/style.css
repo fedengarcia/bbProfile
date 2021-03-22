@@ -5,6 +5,10 @@
   align-items: center;
 }
 
+.carousel {
+  z-index: 2;
+}
+
 .carousel-inner {
   max-height: 650px;
   overflow: hidden;
@@ -103,6 +107,7 @@
 .footer-container {
   height: 100px;
   background-color: #212529;
+  padding: 100px;
 }
 .footer-container .nav-footer {
   display: flex;
@@ -237,7 +242,7 @@ body .arrow {
   position: fixed;
   bottom: 75px;
   right: 40px;
-  z-index: 1;
+  z-index: 0;
   cursor: pointer;
 }
 body .arrow img {
