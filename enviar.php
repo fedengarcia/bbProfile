@@ -17,7 +17,7 @@ $mensaje.= "Asunto: " . $asunto . " \r\n";
 $mensaje.= "Mensaje: " . $consulta . "\r\n";
 $mensaje.= "Enviado el " . date('d/m/Y', time());
 
-$para = 'federico.garcia@etermax.com';
+$para = 'fedengarcia11@hotmail.com';
 $asunto = 'Mensaje de mi sitio web';
 
 mail($para, $asunto, utf8_decode($mensaje), $header);
